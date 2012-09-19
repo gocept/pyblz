@@ -27,3 +27,8 @@ This package provides a dict of the bank information, keyed by BLZ.
      'shortname': u'Kr Spk T\xfcbingen',
      'type': u'1',
      'zip': u'72008'}
+
+In case this package is not kept up to date, you can parse a different file:
+
+    >>> import pyblz.parse
+    >>> banks = pyblz.parse.parse('another-file.txt')
