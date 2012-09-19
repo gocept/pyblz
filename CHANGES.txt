@@ -1,0 +1,8 @@
+====================
+Change log for pyblz
+====================
+
+20120903 (unreleased)
+=====================
+
+initial release
