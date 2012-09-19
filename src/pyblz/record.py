@@ -1,8 +1,6 @@
 # Copyright (c) 2012 gocept gmbh & co. kg
 # See also LICENSE.txt
 
-import re
-
 
 class FixedWidthRecord(object):
 
@@ -70,8 +68,8 @@ class FixedWidthRecord(object):
 
     @staticmethod
     def lstrip(value, fill):
-        return re.sub('^(.*?)[%s]*$' % fill, r'\1', value)
+        return value.rstrip(fill)
 
     @staticmethod
     def rstrip(value, fill):
-        return re.sub('^[%s]*(.*?)$' % fill, r'\1', value)
+        return value.lstrip(fill)
