@@ -3,16 +3,10 @@ Developing pyblz
 ================
 
 :Author:
-    `gocept <http://gocept.com/>`_ <ws@gocept.com>
-
-:Online documentation:
-    http://docs.gocept.com/pyblz/
+    Wolfgang Schnerring <ws@gocept.com>
 
 :PyPI page:
     http://pypi.python.org/pypi/pyblz/
-
-:Issue tracker:
-    https://projects.gocept.com/projects/pyblz/
 
 :Source code:
     https://bitbucket.org/gocept/pyblz/
