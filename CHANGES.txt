@@ -2,7 +2,7 @@
 Change log for pyblz
 ====================
 
-20120903 (unreleased)
+20120903 (2012-09-19)
 =====================
 
 initial release
