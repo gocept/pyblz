@@ -48,14 +48,23 @@ class FixedWidthRecord(object):
         return name, length, fill, direction
 
     @classmethod
-    def parse(cls, line):
+    def parse_file(cls, filename):
+        config = [cls._expand_config(x) for x in cls.fields]
+        result = []
+        for line in open(filename, 'r'):
+            result.append(cls.parse(line, config))
+        return result
+
+    @classmethod
+    def parse(cls, line, config=None):
         assert line.endswith(cls.lineterminator)
         line = line.decode(cls.encoding)
         line = line.replace(cls.lineterminator, '', 1)
         record = cls()
+        if config is None:
+            config = [cls._expand_config(x) for x in cls.fields]
 
-        for config in record.fields:
-            name, length, fill, direction = cls._expand_config(config)
+        for name, length, fill, direction in config:
             direction = direction.replace('just', 'strip')
 
             value = line[:length]

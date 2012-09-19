@@ -25,8 +25,7 @@ class BLZRecord(FixedWidthRecord):
 
 def parse(filename):
     result = {}
-    for line in open(filename, 'r'):
-        record = BLZRecord.parse(line)
+    for record in BLZRecord.parse_file(filename):
         if record['type'] == '1':
             result[record['blz']] = record.data
     return result
