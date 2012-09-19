@@ -21,6 +21,7 @@ setup(
 
     install_requires=[
         'distribute',
+        'gocept.recordserialize',
         ],
 
     extras_require={
