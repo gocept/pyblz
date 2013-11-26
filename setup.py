@@ -17,7 +17,7 @@ def project_path(*names):
 
 setup(
     name='pyblz',
-    version='20120903-r1',
+    version='20120903-r2.dev0',
 
     install_requires=[
         'setuptools',
