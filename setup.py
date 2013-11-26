@@ -1,4 +1,4 @@
-# Copyright (c) 2012 gocept gmbh & co. kg
+# Copyright (c) 2012-2013 gocept gmbh & co. kg
 # See also LICENSE.txt
 
 # This should be only one line. If it must be multi-line, indent the second
@@ -20,7 +20,7 @@ setup(
     version='20120903-r1.dev0',
 
     install_requires=[
-        'distribute',
+        'setuptools',
         'gocept.recordserialize',
         ],
 
