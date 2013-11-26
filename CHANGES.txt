@@ -2,7 +2,7 @@
 Change log for pyblz
 ====================
 
-20120903-r1 (unreleased)
+20120903-r1 (2013-11-26)
 ========================
 
 - Fixed dependency on setuptools.
