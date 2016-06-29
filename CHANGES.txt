@@ -5,7 +5,7 @@ Change log for pyblz
 20120903-r2 (unreleased)
 ========================
 
-- Nothing changed yet.
+- Update to new bootstrap.py
 
 
 20120903-r1 (2013-11-26)
